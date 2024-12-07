@@ -1,0 +1,166 @@
+<html>
+<head>
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #fff5e6, #ffe6f0);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: url('image/header.jpg'); /* Replace with your image URL */
+            background-size: cover; /* Make the image cover the entire header */
+            background-position: center; /* Center the image */
+            color: white;
+            padding: 20px;
+            height: 200px; /* Adjust height as needed */
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ffa500;
+        }
+
+        h1 {
+            color: #d35d90;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #d35d90;
+            border: none;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #b04d73;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+            justify-items: center;
+        }
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .contact-buttons {
+            position: fixed;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-buttons img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        .contact-buttons a {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with photo -->
+    <header>
+        <img src="image/header.jpg" alt="Header">
+    </header>
+
+    <!-- Navigation bar -->
+    <div class="buttons">
+        <a href="biodata.html" target="_blank">Biodata</a>
+        <a href="family.html" target="_blank">Family</a>
+        <a href="education.html" target="_blank">Education</a>
+        <a href="topfav.html" target="_blank">Top Favourite</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="gallery.html" target="_blank">Gallery</a>
+    </div>
+
+    <!-- Gallery Section -->
+    <p>
+        <h1 align="center">°❀⋆.ೃ࿔*:･ My Gallery ･:*ೃ࿔.⋆❀°</h1>
+        </p>
+    <br>
+
+    <div align="center">
+        <a href="image/Family.png">
+        <img src="image/familycover.png"
+        height="300" border="5" hspace="20" vspace="10" alt="raya"></a>
+
+        <a href="image/Highschool Friends.png">
+        <img src="image/highchoolcover.png"
+        height="300" border="5" hspace="20" vspace="10" alt="raya2024">
+
+        <a href="image/Siblings.png">
+        <img src="image/sibligscover.png"
+        height="300" border="5" hspace="20" vspace="10" alt="family"></a>
+
+        <a href="image/UiTM.png">
+            <img src="image/uitmcover.png"
+            height="300" border="5" hspace="20" vspace="10" alt="family"></a>
+
+        <a href="image/Me.png">
+                <img src="image/mecover.png"
+                height="300" border="5" hspace="20" vspace="10" alt="family"></a>
+
+        <a href="image/Toby, Elis, Baby, Girl and Babies.png">
+                    <img src="image/catscover.png"
+                    height="300" border="5" hspace="20" vspace="10" alt="family"></a>
+        </div>
+    
+
+    <!-- Social Media and Email Contact Buttons -->
+    <div class="contact-buttons">
+        <a href="https://www.tiktok.com/@sskkjlni" target="_blank">
+            <img src="image/tiktok-icon.jpg" alt="TikTok">
+        </a>
+        <a href="https://www.instagram.com/nisaaajlni" target="_blank">
+            <img src="image/instagram-icon.jpg" alt="Instagram">
+        </a>
+        <a href="mailto:quratun313@gmail.com?subject=Hi Dear!">
+            <img src="image/email-icon.jpg" alt="Email">
+        </a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+<html>
+<head>
+    <title>Family</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #fff5e6, #ffe6f0);
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: url('image/header.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px;
+            height: 200px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ffa500;
+        }
+
+        h1 {
+            color: #d35d90;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #b04d73;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #d35d90;
+            border: none;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #b04d73;
+        }
+
+        .contact-buttons {
+            position: fixed;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-buttons img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        section {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1000px;
+        }
+
+        .family-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .family-member img {
+            border: 5px solid pink;
+            height: 200px;
+        }
+
+        .family-member.left img {
+            margin-right: 30px;
+        }
+
+        .family-member.right img {
+            margin-left: 30px;
+        }
+
+        .family-member .info {
+            flex: 1;
+            text-align: center;
+        }
+
+        .family-member.left .info {
+            text-align: left;
+        }
+
+        .family-member.right .info {
+            text-align: right;
+        }
+
+        hr {
+            border: 0;
+            height: 5px;
+            background-color: pink;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header></header>
+
+<!-- Navigation bar -->
+<div class="buttons">
+    <a href="biodata.html" target="_blank">Biodata</a>
+    <a href="family.html" target="_blank">Family</a>
+    <a href="education.html" target="_blank">Education</a>
+    <a href="topfav.html" target="_blank">Top Favourite</a>
+    <a href="contact.html" target="_blank">Contact</a>
+    <a href="gallery.html" target="_blank">Gallery</a>
+</div>
+
+<section>
+
+    <h1>°❀⋆.ೃ࿔*:･ My Family ･:*ೃ࿔.⋆❀°</h1>
+
+    <p align="center">
+        I come from a family of five members: my father, my mother, my middle brother, my little sister, 
+        and me. Each of us plays a unique role in making our family a loving and supportive unit. Our 
+        close bond is something that I cherish deeply.
+    </p>
+
+    <div class="family-member left">
+        <img src="image/gambarkahwin.jpg" alt="Wedding Photo" height="180px">
+        <div class="info">
+            <h2><u>My Bapak & Ibu</u></h2>
+            <p>
+                First, let me talk about my father. His name is <b>Jailani Bin Tumiran</b>, born and raised in <b>Muar, Johor</b>, 
+                and he is the pillar of our family. He works as a supervisor at Bulk Mail Center, Shah Alam, 
+                providing for us and ensuring that we have everything we need. One thing I admire most about 
+                my father is his willingness to fight for what he wants. He always teaches us important values, 
+                such as hard work and kindness. He also never failed to provide us with enough education and 
+                necessities. In his free time, he enjoys gardening and loves to watch Korean variety shows such 
+                as Three Meals a Day and more!</p>
+            <p>
+                Next, there’s my mother, <b>Shouti Noor Fahmi Binti Hashim</b>, that was born at Kuala Lumpur, but growing up at <b>Lubok China, Melaka</b>. She is the heart of our family, and 
+                her warmth and care keep us all connected. My mother works as a clerk at one of Pos Malaysia 
+                Branch, and despite her busy schedule, she always finds time for us. Her cooking is something I 
+                look forward to every day, especially when she makes Eid tradition foods. I also admire her 
+                dedication to becoming the righthand of the family, and she’s always there to lend a listening ear 
+                when any of us need advice or comfort.
+            </p>
+        </div>
+    </div>
+    
+    <hr>
+
+    <div class="family-member right">
+        <div class="info">
+            <h2><u>My Brother</u></h2>
+            <p>
+                Then there’s my little brother, <b>Aiman Najwan</b>. He is 17 years old and is in high school. We have 
+                our differences sometimes, but he is always there for me when I need help. He really loves cars
+                and has a bunch of Hot Wheel’s collection in his bedroom. Even though I rarely be at home, we 
+                always make time to go out along with our little sister for food hunting, bookstore shopping and 
+                watching movies. 
+            </p>
+        </div>
+        <img src="image/aimanbapak.jpg" alt="Brother and Father">
+    </div>
+    
+    <hr>
+
+    <div class="family-member left">
+        <img src="image/bapakdekyah_resize.jpg" alt="Little Sister">
+        <div class="info">
+            <h2><u>My Little Sister</u></h2>
+            <p>
+                My little sister <b>Quratun Nabihah</b> is the baby of the family. She’s 15 years old and we might say 
+                that she is a copycat of me. She loves books and always sends me her new book-to-buy list every 
+                time she gets one. Even though she’s younger, she’s incredibly sharp and quick to learn. I enjoy 
+                spending time with her, whether it’s helping her with her schoolwork or playing her favorite game 
+                and gossiping over our recent readings. Watching her grow up is truly a special experience.
+            </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="family-member right">
+        <div class="info">
+            <h2><u>My Atok & Wan</u></h2>
+            <p>
+                Lastly, not to forget my two-favorite person, our grandparents, Mr. Hashim and Mrs. Fatimah. 
+                They have always been a source of comfort and wisdom for our family. I love spending time with 
+                them because they have the most amazing stories about the past, and I learn so much from their 
+                experiences. I remember myself going back home after went to kindergarten and shows what I 
+                did over the day. My grandparents always spoil us with delicious homemade treats, especially fish 
+                curry which is my absolute favorite! I admire their strength, kindness, and the way they have held 
+                our family together over the years. They are truly the heart of our extended family, and I feel so 
+                grateful to have them in my life.
+            </p>
+        </div>
+        <img src="image/atokwan.jpg" alt="Grandparents">
+    </div>
+</section>
+
+<!-- Social Media and Email Contact Buttons -->
+<div class="contact-buttons">
+    <a href="https://www.tiktok.com/@sskkjlni" target="_blank">
+        <img src="image/tiktok-icon.jpg" alt="TikTok">
+    </a>
+    <a href="https://www.instagram.com/nisaaajlni" target="_blank">
+        <img src="image/instagram-icon.jpg" alt="Instagram">
+    </a>
+    <a href="mailto:quratun313@gmail.com?subject=Hi Dear!">
+        <img src="image/email-icon.jpg" alt="Email">
+    </a>
+</div>
+
+</body>
+</html>
