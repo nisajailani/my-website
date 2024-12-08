@@ -1,19 +1,146 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Contact</title>
     <style>
         body {
             background: linear-gradient(to bottom, #f7ead5, #eed9e1);
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             color: #333;
             margin: 0;
             padding: 0;
         }
 
-    </style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: url('image/header-3.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px;
+            height: 200px;
+        }
 
-    <body>
-        <h1>My Contact</h1>
-    </body>
+        h1 {
+            color: #d35d90;
+            font-size: 36px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #b04d73;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #d35d90;
+            border: none;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #b04d73;
+        }
+
+        .contact-container {
+            text-align: center;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-item {
+            margin: 20px 0;
+        }
+
+        .contact-item img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .contact-item a {
+            text-decoration: none;
+            color: #b04d73;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .contact-item p {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+    </style>
 </head>
+<body>
+
+    <header></header>
+
+    <!-- Navigation bar -->
+    <div class="buttons">
+        <a href="home.html" target="_blank">Home</a>
+        <a href="biodata.html" target="_blank">Biodata</a>
+        <a href="family.html" target="_blank">Family</a>
+        <a href="education.html" target="_blank">Education</a>
+        <a href="friends.html" target="_blank">Friends</a>
+        <a href="topfav.html" target="_blank">Top Favourite</a>
+        <a href="gallery.html" target="_blank">Gallery</a>
+    </div>
+
+    <h1>‧₊˚🖇️✩ Contact Me ✩₊˚🖇️</h1>
+
+    <!-- Contact Section -->
+    <div class="contact-container">
+        <div class="contact-item">
+            <img src="image/tiktok-icon.png" alt="TikTok">
+            <p>Follow me on TikTok for fun and creative content!</p>
+            <a href="https://www.tiktok.com/@sskkjlni" target="_blank">@sskkjlni</a>
+        </div>
+
+        <div class="contact-item">
+            <img src="image/instagram-icon.png" alt="Instagram">
+            <p>Check out my Instagram for updates and aesthetic posts!</p>
+            <a href="https://www.instagram.com/nisaaajlni" target="_blank">@nisaaajlni</a>
+        </div>
+
+        <div class="contact-item">
+            <img src="image/email-icon.png" alt="Email">
+            <p>Need book recommendations or any help? Feel free to drop me an email!</p>
+            <a href="mailto:quratun313@gmail.com?subject=Hi Dear!">quratun313@gmail.com</a>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 My Personal Website | nisajlni
+    </footer>
+
+</body>
 </html>

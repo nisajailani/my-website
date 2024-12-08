@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Friends</title>
@@ -9,4 +10,218 @@
             margin: 0;
             padding: 0;
         }
+    
+        /* Header with image */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: url('image/header-3.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px;
+            height: 200px;
+        }
 
+        h1 {
+            color: #d35d90;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #b04d73;
+        }
+
+        /* Navigation button */
+        .buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #d35d90;
+            border: none;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #b04d73;
+        }
+
+        /* Social Media button */
+        .contact-buttons {
+            position: fixed;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-buttons img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        section {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1000px;
+        }
+
+        .friends {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .friends img {
+            border: 5px solid rgb(202, 94, 128);
+            height: 200px;
+        }
+
+        .friends.left img {
+            margin-right: 30px;
+        }
+
+        .friends.right img {
+            margin-left: 30px;
+        }
+
+        .friends .info {
+            flex: 1;
+            text-align: center;
+        }
+
+        .friends.left .info {
+            text-align: left;
+        }
+
+        .friends.right .info {
+            text-align: right;
+        }
+
+        hr {
+            border: 0;
+            height: 5px;
+            background-color: rgb(186, 50, 114);
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header></header>
+
+<!-- Navigation bar -->
+<div class="buttons">
+    <a href="home.html" target="_blank">Home</a>
+    <a href="biodata.html" target="_blank">Biodata</a>
+    <a href="family.html" target="_blank">Family</a>
+    <a href="education.html" target="_blank">Education</a>
+    <a href="topfav.html" target="_blank">Top Favourite</a>
+    <a href="contact.html" target="_blank">Contact</a>
+    <a href="gallery.html" target="_blank">Gallery</a>
+</div>
+
+<section>
+    <h1>°❀⋆.ೃ࿔*:･ My Phuean ･:*ೃ࿔.⋆❀°</h1>
+
+    <hr>
+
+    <div align="center">
+        <img src="image/ainanisa.jpg" height="300" border="5" hspace="10" vspace="10" alt="raya" style="border-color: rgb(190, 129, 155);">
+        <img src="image/phuean.jpg" height="300" border="5" hspace="10" vspace="10" alt="raya2024" style="border-color: rgb(190, 129, 155);">
+        <img src="image/anisnisa.jpg" height="300" border="5" hspace="10" vspace="10" alt="family" style="border-color: rgb(190, 129, 155);">
+    </div>
+
+    <hr>
+
+    <p align="center">
+        During my time at MRSM Mersing, I was fortunate to meet two of my best friends who have played 
+        an important role in my life. We bonded over shared experiences, laughter, and academic 
+        challenges, and those friendships have remained strong even after we went our separate ways 
+        for further studies. Their presence has been a constant source of support and encouragement 
+        throughout the years.
+    </p>
+
+    <div class="friends left">
+        <img src="image/ainashofia.jpg" alt="Aina Shofia" height="180px">
+        <div class="info">
+            <h2><u>Nor Aina Shofia Bt Norazizoliraman</u></h2>
+            <p>
+                The first friend I want to talk about is Nor Aina Shofia binti Norazizoliraman. From the moment we 
+                met, I was drawn to her warm and caring nature. I remember seeing the first day I stepped into 
+                MRSM Mersing. She is incredibly dedicated and hardworking, qualities that have taken her far in 
+                life. After finishing at MRSM, Aina pursued her degree in education (Mathematics) with Honors at 
+                Universiti Pendidikan Sultan Idris (UPSI). Until now, she has never failed to amaze us with her 
+                educational achievements as she is known as the most genius among us. Seeing her dedication 
+                to her studies and her passion for education has always inspired me. Despite her busy schedule, 
+                we still keep in touch, still try to meet each other every semester break, and I am proud to see her 
+                chasing her dreams.</p>
+        </div>
+    </div>
+
+    <div class="friends right">
+        <div class="info">
+            <h2><u>Nur Anis Sofia Bt Adisiman</u></h2>
+            <p>
+                My other best friend is Nur Anis Sofia bt Adisiman, who is just as remarkable. Anis has a vibrant 
+                and energetic personality that always brings a positive atmosphere wherever she goes. She went 
+                on to study for a diploma in Applied Science at Universiti Tun Hussein Onn Malaysia (UTHM). 
+                Anis’s passion science and her determination to succeed have always impressed me, and I know 
+                she’s destined for great things. She is the strongest soldier in our groups even if she looks very 
+                polite and gentle among us three. Even though we still didn’t get the chance to meet each other 
+                yet, there are still numerous videocalls we got to do every day. When we are reminiscing about 
+                our MRSM days or talking about our current lives, she never fails to lift my spirits. 
+            </p>
+        </div>
+        <img src="image/anissofia.jpg" alt="Anis Sofia" height="180px">
+    </div>
+
+    <p align="center">
+        Both Aina and Anis are not just friends but sisters I’ve gained along my journey. Even though we 
+        are all pursuing different paths, the bond we built during our time at MRSM Mersing remains 
+        strong. I am grateful to have these two amazing individuals in my life, and I know that, no matter 
+        where life takes us, our friendship will continue to grow.
+    </p>
+</section>
+
+<!-- Social Media and Email Contact Buttons -->
+<div class="contact-buttons">
+    <a href="https://www.tiktok.com/@sskkjlni" target="_blank">
+        <img src="image/tiktok-icon.png" alt="TikTok">
+    </a>
+    <a href="https://www.instagram.com/nisaaajlni" target="_blank">
+        <img src="image/instagram-icon.png" alt="Instagram">
+    </a>
+    <a href="mailto:quratun313@gmail.com?subject=Hi Dear!">
+        <img src="image/email-icon.png" alt="Email">
+    </a>
+</div>
+
+<footer>
+    © 2024 My Personal Website | nisajlni
+</footer>
+
+</body>
+</html>
