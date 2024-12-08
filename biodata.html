@@ -3,7 +3,7 @@
     <title>Biodata</title>
     <style>
         body {
-            background: linear-gradient(to bottom, #fff5e6, #ffe6f0);
+            background: linear-gradient(to bottom, #f7ead5, #eed9e1);
             font-family: Arial, sans-serif;
             color: #333;
             margin: 0;
@@ -11,13 +11,13 @@
         }
 
         h1 {
-            text-align: center;
+            text-align: center; /* untuk header */
             color: #d35d90;
         }
 
         .section-title {
-            font-size: 1.5em;
-            color: #be427a;
+            font-size: 1.5em; /* untuk tajuk setiap section */
+            color: #d1005e;
             font-family: "Trebuchet MS", sans-serif;
         }
 
@@ -57,7 +57,8 @@
             padding: 20px;
             height: 250px; /* Adjust height as needed */
         }
-
+    
+    /* Navigation button style */
         .buttons {
             display: flex;
             gap: 15px;
@@ -78,7 +79,8 @@
         .buttons a:hover {
             background-color: #b04d73;
         }
-
+    
+    /* Social media button */
         .contact-buttons {
             position: fixed;
             left: 10px;
@@ -94,6 +96,28 @@
         }
         .contact-buttons a {
             margin: 5px 0;
+        }
+
+    /* Style for table */
+        table {
+            border: 2px solid rgb(255, 255, 255);
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 2px solid rgb(255, 255, 255);
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        td img {
+            display: block;
+            max-width: 200px;
+            height: auto;
         }
 
     </style>
@@ -114,13 +138,34 @@
             <a href="gallery.html" target="_blank">Gallery</a>
         </div>
 
-
+    <!--Header-->
     <h1>°❀⋆.ೃ࿔*:･ My Biodata ･:*ೃ࿔.⋆❀°</h1>
     <hr size="5" color="pink" width="90%">
 
-    <div align="center">
-        <img src="image/nisa (3).jpg" height="300" border="5" hspace="10" vspace="10" alt="raya2024" class="custom-border">
-    </div>
+    <!--Table - Biodata Information-->
+    <table style="margin: auto;">
+        <tr>
+            <td rowspan="5" style="text-align: center;"><img src="image/nisa (3).jpg" style="display: inline-block;"></td> <!--image alignment-->
+            <th>Name</th>
+            <td>Quratun Nisa' Binti Jailani</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>Female</td>
+        </tr>
+        <tr>
+            <th>Cit & State</th>
+            <td>Hulu Langat, Selangor</td>
+        </tr>
+        <tr>
+            <th>Date of Birth</th>
+            <td>31st March 2004</td>
+        </tr>
+    </table>
 
     <hr size="5" color="pink" width="90%">
 
@@ -151,7 +196,8 @@
             watchers, but some’s even got a place in my heart too.</p>
         
         <!--Ordered List-->
-            <p>This is my current reading!
+        <!-- Superscript -->
+            <p style="color: #333;"><b>📚🎧☕ This is my current reading! ☕🎧📚</b>
                 <ol align="left">
                     <li><i>Mahadewi: Legenda Ratu</i><sup> (Elvroseth)</sup> - Romance, Folk Tales, Legends & Mythology</li>
                     <li><i>Mahadewi: Legenda Raja</i><sup> (Elvroseth)</sup> - Romance, Folk Tales, Legends & Mythology</li>
@@ -173,7 +219,7 @@
 
     <!-- Quotes Section -->
     <section id="quotes" style="max-width: 60%; margin: 0 auto;">
-        <p class="section-title" align="center">Quotes of the Day</p>
+        <p class="section-title" align="center">Quotes of the Day 📜</p>
         <blockquote>
             "Do today what should be done. Your tomorrow may never come."
         </blockquote>
@@ -186,7 +232,7 @@
     
     </section>
 
-    <!-- Closing Section -->
+    <!-- Subscript -->
     <section style="bottom: 10px; right: 5%; text-align: right; max-width: 90%;">
         <blockquote>
             - Yours sincerely, <strong>QURATUN NISA'</strong><sub>(QN)</sub>
