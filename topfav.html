@@ -122,45 +122,38 @@
         }
 
         table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            background-color: rgb(239, 239, 239);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+        width: 80%; /* Adjusted to 90% for better responsiveness */
+        margin: 20px auto;
+        border-collapse: collapse;
+        background-color: rgb(239, 239, 239);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-size: 16px; /* Increased font size for better readability */
+    }
 
-        th, td {
-            border: 1px solid #bf3e92;
-            padding: 15px;
-            text-align: center;
-        }
+    th, td {
+        border: 1px solid #bf3e92;
+        padding: 20px; /* Increased padding for a cleaner look */
+        text-align: center;
+    }
 
-        th {
-            background-color: #bd2a7b;
-            color: white;
-        }
+    th {
+        background-color: #bd2a7b;
+        color: white;
+    }
 
-        img {
-            max-width: 100px;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #333;
-            color: white;
-            margin-top: 20px;
-            font-size: 14px;
-        }
-
+    img {
+        max-width: 120px; /* Slightly increased size for images */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
     </style>
 </head>
 <body>
 
     <header></header>
+
+    <br clear="all">
 
     <!-- Navigation bar -->
     <div class="buttons">
@@ -249,38 +242,44 @@
     </div>
 
     <!--SONGS-->
-<div class="container">
+    <div class="container">
     <!-- Section for favorite entertainment -->
     <div class="favorite-section">
         <h2 style="color: #8b1d47;"> ♫⋆｡♪ ₊˚♬ﾟ. My Favorite Songs ♫⋆｡♪ ₊˚♬ﾟ.</h2>
-        <p>This is my all-the-time favourite songs. Click on the icon to go to Spotify.</p>
+        <p>This is my all-the-time favourite songs. Click on the album cover to go to Spotify.</p>
     
 
-    <table>
+    <table width="50%">
         <tr>
-            <th colspan="3">My Favorite Songs</th>
+            <th colspan="2">My Favorite Songs</th>
         </tr>
         <tr>
-            <td>Stranger by Jeff Satur</td>
-            <td>Healing by Gemini, Ford, Fourth, Satang</td>
-            <td>The Wave by Apink</td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://open.spotify.com/album/6bG0Hug4UHRMvKapaqsslZ"><img src="image/spotify-icon.png" alt="Song 1" style="width: 30px;"></a>
+            <td>Stranger by Jeff Satur 
+                <p><img src="image/stranger-cover.jpeg" width="180px"><a href="https://open.spotify.com/album/6bG0Hug4UHRMvKapaqsslZ"></a></p>
             </td>
-            <td>
-                <a href="https://open.spotify.com/track/02Sqx7ZBDwipMNiYR6Ag99"><img src="image/spotify-icon.png" alt="Song 2" style="width: 30px;"></a>
-            </td>
-            <td>
-                <a href="https://open.spotify.com/album/2QprPlI6HTej5yVnSyrUGo"><img src="image/spotify-icon.png" alt="Song 3" style="width: 30px;"></a>
-            </td>
-        </tr>
-        <tr>
             <td>
                 <audio controls>
                     <source src="audio/stranger-jeffsatur.mp3" type="audio/ogg">
                     <source src="audio/stranger-jeffsatur.mp3" type="audio/mpeg">
+                </audio>
+            </td>
+        <tr>
+            <td>Healing by Gemini, Ford, Fourth, Satang
+                <p><img src="image/healing-cover.jpeg" width="180px"><a href="https://open.spotify.com/track/02Sqx7ZBDwipMNiYR6Ag99"></a></p>
+            </td>
+            <td>
+            <audio controls>
+                <source src="audio/healing-msp.mp3" type="audio/ogg">
+                <source src="audio/healing-msp.mp3" type="audio/mpeg">
+            </audio>
+            </td>
+        </tr>
+            <td>The Wave by Apink
+                <p><img src="image/thewave-apink.jpeg" width="180px"><a href="https://open.spotify.com/album/2QprPlI6HTej5yVnSyrUGo"></a></p>
+            </td>
+            <td><audio controls>
+                    <source src="audio/thewave-apink.mp3" type="audio/ogg">
+                    <source src="audio/thewave-apink.mp3" type="audio/mpeg">
                 </audio>
             </td>
         </tr>
@@ -301,8 +300,5 @@
         </a>
     </div>
 
-    <footer>
-        © 2024 My Personal Website | nisajlni
-    </footer>
 </body>
 </html>
