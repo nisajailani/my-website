@@ -48,14 +48,13 @@
         /* Header Styling */
         header {
             display: flex;
-            justify-content: space-between;
             align-items: center;
             background-image: url(image/header-3.jpg); 
-            background-size: cover; /* Make the image cover the entire header */
-            background-position: center; /* Center the image */
+            background-size: cover; 
+            background-position: center; 
             color: white;
             padding: 20px;
-            height: 250px; /* Adjust height as needed */
+            height: 150px; /* Adjust height as needed */
         }
     
     /* Navigation button style */
@@ -120,14 +119,12 @@
             height: auto;
         }
 
-        footer {
-            margin-top: auto;
-            padding: 10px 0;
+        .footer {
+            padding: 10px;
             background-color: rgba(0, 0, 0, 0.3);
             color: white;
             max-width: 100%; /* Ensures the footer spans the full width of the page */
             position: relative; /* Prevents overlap issues */
-            text-align: center;
             font-size: 1em;
         }
 
@@ -138,6 +135,9 @@
 
     </style>
 </head>
+
+<link rel="stylesheet" href="css/style.css">
+
 <body>
 
     <!-- Horizontal Header -->
@@ -157,7 +157,8 @@
         </div>
 
     <!--Header-->
-    <h1>°❀⋆.ೃ࿔*:･ My Biodata ･:*ೃ࿔.⋆❀°</h1>
+    <h1>°❀⋆.ೃ࿔*:･ <span>M</span><span>y</span> <span>B</span><span>i</span><span>o</span><span>d</span><span>a</span><span>t</span><span>a</span> ･:*ೃ࿔.⋆❀°</h1>
+
     <hr size="5" color="pink" width="90%">
 
     <!--Table - Biodata Information-->
@@ -283,12 +284,12 @@
     
 <br clear="all">
     <!--Footer-->
-    <div class="footer">
-    <footer width="100%">
-        &copy; 2024 nisajlni. All Rights Reserved.
-        <div class="last-update">Last Updated: December 11, 2024</div>
+    <div class="footer" style="text-align: center;">  
+        &copy; 2024 @nisajlni | All Rights Reserved.
+        <div class="last-update">Last Updated: January 2024</div>
     </footer>
     </div>
+
 
 </body>
 </html>
