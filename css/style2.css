@@ -1,0 +1,49 @@
+/*Bouncy text*/
+.bouncing-text {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between words */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  /* Individual words */
+  .bouncing-text span {
+    display: inline-block;
+    animation: bounce 1.5s infinite;
+  }
+  
+  /* Delay animation for each word */
+  .bouncing-text span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .bouncing-text span:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  .bouncing-text span:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  .bouncing-text span:nth-child(4) {
+    animation-delay: 0.9s;
+  }
+  .bouncing-text span:nth-child(5) {
+    animation-delay: 1.2s;
+  }
+  .bouncing-text span:nth-child(6) {
+    animation-delay: 1.5s;
+  }
+  .bouncing-text span:nth-child(7) {
+    animation-delay: 1.8s;
+  }
+  
+  /* Bounce animation */
+  @keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+  }
