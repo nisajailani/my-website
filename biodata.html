@@ -130,16 +130,22 @@
             background-color: #f4f4f4;
         }
         td img {
+            display: block;
             max-width: 200px;
             height: auto;
         }
 
         .footer {
-            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%; /* Ensures the footer spans the full width of the page */
             background-color: rgba(0, 0, 0, 0.3);
             color: white;
-            max-width: 100%; /* Ensures the footer spans the full width of the page */
+            padding: 10px;
+            text-align: center;
             font-size: 1em;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
         }
 
         .last-update {
