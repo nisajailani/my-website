@@ -15,7 +15,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-image: url('image/header-3.jpg'); 
+            background-image: url('image/header-4.jpg'); 
             background-size: cover;
             background-position: center;
             color: white;
@@ -131,6 +131,21 @@
             font-size: 0.8em;
             margin-top: 5px;
         }
+
+        /*Clock*/
+        .clock-container {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #ffffffd9;
+            border: 2px solid #ef69be;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #d8509b;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
@@ -238,6 +253,11 @@
     </div>
 </section>
 
+<!--Anchor Link-->
+<a href="#top" class="back-to-top">
+    <img src="image/up-icon.png" alt="Back to Top">
+</a>
+
 <!-- Social Media and Email Contact Buttons -->
 <div class="contact-buttons">
     <a href="https://www.tiktok.com/@sskkjlni" target="_blank">
@@ -255,11 +275,27 @@
     <!--Footer-->
     <div class="footer">
     <footer width="100%">
-        &copy; 2024 @nisajlni | All Rights Reserved.
+        &copy;2024 My Personal Webite @nisajlni | All Rights Reserved.
         <div class="last-update">Last Updated: January 2024</div>
-        
     </footer>
     </div>
+
+    <!--Clock-->
+    <div class="clock-container" id="clock"></div>
+    <script>
+        function updateClock() {
+            const clockElement = document.getElementById('clock');
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+    
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+        updateClock(); 
+    </script>
 
 </body>
 </html>

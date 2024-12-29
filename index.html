@@ -1,3 +1,4 @@
+<html>
 <head>
     <title>Home</title>
     <style>
@@ -26,7 +27,7 @@
 
         /* Header Styles */
         header h1 {
-            font-size: 2.5em;
+            font-size: 1.5em;
             color: #d35d90;
             margin-bottom: 20px;
             text-align: center;
@@ -82,27 +83,84 @@
             color: white;
             width: 100%;
             text-align: center;
-            font-size: 1em;
+            font-size: 0.8em;
         }
 
         .last-update {
             font-size: 0.8em;
             margin-top: 5px;
+            display: inline;
         }
 
-        /* Additional Text Styling */
-        .intro-text {
+        .clock-container {
+            font-size: 0.8rem;
+            margin-top: 5px;
+            display: inline;
+        }
+
+        /* Intro */
+        .intro-container {
+            display: flex;
+            align-items: flex-start;
+            font-family: 'Courier New', Courier, monospace;
             text-align: left;
-            color: #b13867;
-            margin: 30px 0;
+            gap: 15px;
         }
 
-        .intro-text img {
-            float: left;
-            margin-right: 10px;
+        .intro-container img {
+            width: 230px;
+            height: 230px;
         }
+
+        .speech-bubbles {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .speech-bubble {
+            position: relative;
+            background: #ffccf2;
+            border-radius: 15px;
+            padding: 15px 20px;
+            color: #5b005b;
+            max-width: 300px;
+            font-size: 1.2em;
+        }
+
+        .speech-bubble:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 20px;
+            width: 0;
+            height: 0;
+            border: 15px solid transparent;
+            border-top-color: #ffccf2;
+        }
+
+        .speech-bubble:nth-child(2) {
+            background: #ccf2ff;
+            color: #004d73;
+        }
+
+        .speech-bubble:nth-child(2):after {
+            border-top-color: #ccf2ff;
+        }
+
+        .speech-bubble:nth-child(3) {
+            background: #dfffcc;
+            color: #336600;
+        }
+
+        .speech-bubble:nth-child(3):after {
+            border-top-color: #dfffcc;
+        }
+        
     </style>
 </head>
+
+<link rel="stylesheet" a href="css/style2.css">
 
 <body>
 
@@ -112,7 +170,8 @@
     <!-- Main Container -->
     <div class="container">
         <header>
-            <h1>𓍢ִ໋☕️✧˚༘⋆ Welcome to My Personal Website! ⋆༘˚✧☕️𓍢ִ໋</h1>
+            <div class="bouncing-text">
+            <h1><span>𓍢ִ໋☕️✧˚༘⋆</span> <span>Welcome</span> <span>to</span> <span>My</span> <span>Personal</span> <span>Website!</span> <span>⋆༘˚✧☕️𓍢ִ໋</span></h1></div>
         </header>
         <div class="buttons">
             <a href="biodata.html" target="_blank">Biodata</a>
@@ -125,11 +184,21 @@
         </div>
     </div>
 
-    <div class="intro-text">
+
+    <br clear="all">
+    <div class="intro-container">
         <img src="gif/hi-turtle.gif" alt="Hi Turtle">
-        <h3>Hello, it's me Quratun Nisa'. </h3>
-        <h3>Nice to meet you! ≽^•⩊•^≼</h3> 
-        <h3>Let's explore about me for us to get along better ^^.</h3>
+        <div class="speech-bubbles">
+            <div class="speech-bubble">
+                <b>Hello, it's me Quratun Nisa'.</b>
+            </div>
+            <div class="speech-bubble">
+                <b>Nice to meet you! ≽^•⩊•^≼</b>
+            </div>
+            <div class="speech-bubble">
+                <b>Let's explore about me for us to get along better ^^.</b>
+            </div>
+        </div>
     </div>
 
     <!-- Social Media and Email Contact Buttons -->
@@ -147,9 +216,24 @@
 
     <!-- Footer -->
     <footer>
-        &copy; 2024 @nisajlni | All Rights Reserved.
-        <div class="last-update">Last Updated: January 2024</div>
-        
+        &copy;2024 My Personal Website @nisajlni | All Rights Reserved.
+        <br>
+        <div class="last-update">Last Updated: January 2024 - <span class="clock-container" id="clock"></span></div>
+
+    <script>
+        function updateClock() {
+            const clockElement = document.getElementById('clock');
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+    
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+        updateClock(); 
+    </script>
     </footer>
 
 </body>
