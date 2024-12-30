@@ -19,6 +19,7 @@
             font-size: 1.5em; /* untuk tajuk setiap section */
             color: #d1005e;
             font-family: "Trebuchet MS", sans-serif;
+            font: bold;
         }
 
         blockquote {
@@ -55,7 +56,7 @@
             background-position: center; 
             color: white;
             padding: 20px;
-            height: 150px; /* Adjust height as needed */
+            height: 150px; 
         }
     
     /* Navigation button style */
@@ -111,7 +112,7 @@
             color: #d8509b;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+        }
 
     /* Style for table */
         table {
@@ -139,13 +140,13 @@
             position: fixed;
             bottom: 0;
             left: 0;
-            width: 100%; /* Ensures the footer spans the full width of the page */
+            width: 100%; 
             background-color: rgba(0, 0, 0, 0.3);
             color: white;
             padding: 10px;
             text-align: center;
             font-size: 1em;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
         }
 
         .last-update {
@@ -160,13 +161,6 @@
 
 <body>
 
-      <!-- Autoplay Background Music -->
-    <audio autoplay loop muted>
-        <source src="audio/puzzlepiece-bg.mp3" type="audio/mpeg">
-        <source src="audio/puzzlepiece-bg.mp3" type="audio/ogg">
-        Your browser does not support the audio element.
-    </audio>
-
     <!-- Horizontal Header -->
     <header></header>
 
@@ -178,7 +172,7 @@
             <a href="family.html" target="_blank">Family</a>
             <a href="education.html" target="_blank">Education</a>
             <a href="friends.html" target="_blank">Friends</a>
-            <a href="topfav.html" target="_blank">Top Favourite</a>
+            <a href="topfav.html" target="_blank" id="topfav-button">Top Favourite</a>
             <a href="contact.html" target="_blank">Contact</a>
             <a href="gallery.html" target="_blank">Gallery</a>
         </div>
@@ -221,7 +215,7 @@
 
     <!-- Introduction Section -->
     <section id="about" style="max-width: 80%; margin: 0 auto; text-align: center;">
-        <p class="section-title" align="center">All About Me (QURATUN NISA')</p>
+        <p class="section-title" align="center"><big>More About Me</big> <small>(QURATUN NISA')</small></p>
         <p align="center" >
             My name is <b><i>Quratun Nisa' Binti Jailani</i></b>, a 20-year-old girl, born on 
             <strong>31<sup>st</sup> March 2004</strong> at <em>Hospital Besar Kuala Lumpur</em>. 
@@ -231,9 +225,7 @@
             kindergarten to primary school while my parents were at work.
         </p>
 
-        <p class="section-title" align="center">
-            <big>MORE ABOUT ME</big><small> (QURATUN NISA')</small>
-        </p>
+        <p class="section-title" align="center"></p>
         
         <p> Living as a child, I grow up with so many ambition. 
             <i>A teacher? A lecturer? A doctor? A chef?</i> 
@@ -245,6 +237,8 @@
             Malay songs and sometimes other different foreign language. I might not a movie or a drama 
             watchers, but some’s even got a place in my heart too.</p>
     
+            <br clear="all">
+
             <section id="current-reading" style="text-align: center;">
                 <hr style="border: 2px dashed #b04d73; width: 90%; margin: auto;">
                 <!-- Ordered List -->
@@ -266,6 +260,8 @@
                 </p>
                 <hr style="border: 2px dashed #b04d73; width: 90%; margin: auto;">
             </section>
+
+            <br clear="all">
 
     <!-- Education Section -->
     <section id="education" style="max-width: 50%; margin: 0 auto;">
@@ -326,7 +322,7 @@
     </footer>
     </div>
 
-<!--Clock-->
+<!--JAVASCRIPT - Clock-->
     <div class="clock-container" id="clock"></div>
     <script>
         function updateClock() {
@@ -342,6 +338,8 @@
         setInterval(updateClock, 1000);
         updateClock(); 
     </script>
+
+
 
 </body>
 </html>

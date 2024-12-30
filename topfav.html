@@ -13,7 +13,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-image: url('image/header-4.jpg'); /* Replace with your image URL */
+            background-image: url('image/header-4.jpg'); 
             background-size: cover;
             background-position: center;
             color: white;
@@ -122,17 +122,17 @@
         }
 
         table {
-        width: 80%; /* Adjusted to 90% for better responsiveness */
+        width: 80%; 
         margin: 20px auto;
         border-collapse: collapse;
         background-color: rgb(239, 239, 239);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        font-size: 16px; /* Increased font size for better readability */
+        font-size: 16px; 
         }
 
         th, td {
             border: 1px solid #bf3e92;
-            padding: 20px; /* Increased padding for a cleaner look */
+            padding: 20px;
             text-align: center;
         }
 
@@ -142,7 +142,7 @@
         }
 
         img {
-            max-width: 120px; /* Slightly increased size for images */
+            max-width: 120px; 
             height: auto;
             display: block;
             margin: 0 auto;
@@ -153,8 +153,8 @@
             padding: 10px 0;
             background-color: rgba(0, 0, 0, 0.3);
             color: white;
-            max-width: 100%; /* Untuk fullkan lebar footer */
-            position: relative; /* Prevents overlap */
+            max-width: 100%; 
+            position: relative;
             text-align: center;
             font-size: 1em;
         }
@@ -179,6 +179,35 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
+        .notification {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 70%;
+            background-color: #f8d7da;
+            color: #cf3a96;
+            border: 1px solid #ffdcf7e1;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            font-size: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .close-btn {
+            background: none;
+            border-radius: 5px;
+            border-color: #eed9e1;
+            font: bolder;
+            font-size: 20px;
+            color: #655c5d;
+            cursor: pointer;
+        }
+
+
     </style>
 </head>
 
@@ -189,6 +218,18 @@
     <header></header>
 
     <br clear="all">
+
+    <!--Notification-->
+    <div id="notification" class="notification">
+        <span><b>Reminder:</b> Please pause the music before scrolling with this page. Thank you! :)</span>
+        <button class="close-btn" onclick="closeNotification()">x</button>
+    </div>
+
+    <script>
+        function closeNotification() {
+            document.getElementById("notification").style.display = "none";
+        }
+    </script>
 
     <!-- Navigation bar -->
     <div class="buttons">
