@@ -179,35 +179,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .notification {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 70%;
-            background-color: #f8d7da;
-            color: #cf3a96;
-            border: 1px solid #ffdcf7e1;
-            border-radius: 8px;
-            padding: 10px;
-            text-align: center;
-            font-size: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .close-btn {
-            background: none;
-            border-radius: 5px;
-            border-color: #eed9e1;
-            font: bolder;
-            font-size: 20px;
-            color: #655c5d;
-            cursor: pointer;
-        }
-
-
     </style>
 </head>
 
@@ -220,15 +191,11 @@
     <br clear="all">
 
     <!--Notification-->
-    <div id="notification" class="notification">
-        <span><b>Reminder:</b> Please pause the music before scrolling with this page. Thank you! :)</span>
-        <button class="close-btn" onclick="closeNotification()">x</button>
-    </div>
-
     <script>
-        function closeNotification() {
-            document.getElementById("notification").style.display = "none";
-        }
+        // This function will run as soon as the page loads
+        window.onload = function() {
+            alert("Please pause the music before continue!");
+        };
     </script>
 
     <!-- Navigation bar -->
